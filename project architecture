@@ -1,0 +1,59 @@
+# Automated MEP Cost Estimation & PDF Drawing Parser
+
+An intelligent Python-based pipeline designed to automate Gross Floor Area (GFA) extraction from architectural PDF drawings and calculate multi-service Mechanical, Electrical, and Plumbing (MEP) cost estimations. 
+
+This project bridges **Mechanical Engineering domain expertise** with **Software Engineering and Data Analytics**, providing a robust dual-fallback estimation engine that synthesizes historical project benchmarks, supplier/labor rates, inflation rates, and engineering safety margins.
+
+---
+
+## 🚀 Key Features
+
+* **Automated PDF Parsing:** Uses `PyMuPDF` (`fitz`) and regular expression pattern matching to scan architectural PDF sheets and extract gross floor areas ($m^2$).
+* **Dual-Fallback Cost Engine:**
+  * *Historical Matching:* Normalizes and cross-checks historical project CSV data by service type, system specifications, and building height/area.
+  * *Market Benchmark Synthesis:* Automatically generates baseline estimates using integrated supplier and labor cost indices when historical data is absent.
+* **Typology & Height Scaling:** Adjusts cost calculations dynamically based on building type (e.g., Hotel, Office, High-Rise Residential, Landed Residential, Warehouses) and vertical height factors.
+* **Financial & Risk Adjustments:** Automatically factors in a **6% inflation rate** and a **10% engineering safety factor**.
+* **Conditional Service Filtering:** Evaluates applicable MEP services (ACMV, Plumbing, Fire Protection, Lifts) and omits non-applicable trades entirely.
+
+---
+
+## 🛠️ Project Architecture
+
+The codebase is structured following professional separation-of-concerns principles:
+
+```text
+mep_estimator/
+│
+├── mep_estimator.py            # Main execution script
+├── previous_projects.csv       # Optional historical database schema
+└── README.md                   # Project documentation
+
+
+[ Architectural PDF Drawing ] 
+             │
+             ▼
+  ┌────────────────────────┐
+  │ Module 1: PDF Parser   │ ──> Extracts Gross Floor Area (GFA) in m²
+  └────────────────────────┘
+             │
+             ▼
+  ┌────────────────────────┐
+  │ Module 2: User Inputs  │ ──> Collects Building Type, Height, & Required MEP Systems
+  └────────────────────────┘
+             │
+             ▼
+  ┌────────────────────────┐
+  │ Module 3: Cost Engine  │ ──> Cross-checks Historical CSV Data OR Market Benchmarks
+  └────────────────────────┘
+             │
+             ▼
+  ┌────────────────────────┐
+  │ Module 4: Financials   │ ──> Applies 6% Inflation & 10% Safety Factors
+  └────────────────────────┘
+             │
+             ▼
+  [ Final Structured MEP Cost Report ]
+
+
+  
