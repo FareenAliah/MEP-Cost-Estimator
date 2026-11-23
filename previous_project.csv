@@ -1,16 +1,28 @@
 service,building_type,system_spec,area_m2,height_m,awarded_cost
-ACMV,office,VRV system,10000,120,3100000
-ACMV,office,Split type,4500,18,780000
-Plumbing,office,Standard cold & hot water,12000,95,2350000
-Fire,office,Sprinkler + hydrant + alarm + hose reel+ wet riser,12000,14,1450000
-Lift,office,High-speed passenger lift,12000,60,1320000
+ACMV,office,VRV system,10000,98,5789000
+ACMV,office,Split type,4500,18,878000 - only count level that use split unit only
+Plumbing,office,Standard cold & hot water,10000,98,2800000
+Fire,office,Sprinkler + hydrant + alarm + hose reel+ wet riser,10000,98,8656540
+Lift,office,High-speed passenger lift,10000,98, 75000000
 
+year awarded mep = 2020
+ basic inflation rate is 6% for construction
  ===========================================================================
-MEP COST ESTIMATION REPORT | OFFICE | 12,000.00 m² | 120.0m Height
+MEP COST ESTIMATION REPORT | OFFICE | 12,000.00 m² | 88.0m Height | Year : 2025
 ===========================================================================
 
 [ACMV] - Spec: VRV system
-  Data Source           : Auto-Generated Market Rate (Supplier + Labor Cross-Check)
+  Data Source           : CSV file previous project / Auto-Generated Market Rate (Supplier + Labor Cross-Check)
+  Base Cost             : 5,789,000.00
+  + Inflation (6%)      : 247,104.00 # inflation is not fix, should be increase based on year
+  + Safety Factor (10%) : 436,550.40
+  Total Estimation      : 4,802,054.40
+  Cost per Area         : 400.17 / m²
+  Cost per Height       : 106,712.32 / m
+
+[PLUMBING] -> Spec : Cold Water and Sanitary system
+
+Data Source           : CSV file previous project / Auto-Generated Market Rate (Supplier + Labor Cross-Check)
   Base Cost             : 4,118,400.00
   + Inflation (6%)      : 247,104.00
   + Safety Factor (10%) : 436,550.40
@@ -18,12 +30,23 @@ MEP COST ESTIMATION REPORT | OFFICE | 12,000.00 m² | 120.0m Height
   Cost per Area         : 400.17 / m²
   Cost per Height       : 106,712.32 / m
 
-[PLUMBING] -> NOT APPLICABLE (No costing)
-
 [FIRE] - Spec: Sprinkler + hydrant + alarm
-  Data Source           : Auto-Generated Market Rate (Supplier + Labor Cross-Check)
-  Luft Estimation...
+  Data Source           : CSV file / Auto-Generated Market Rate (Supplier + Labor Cross-Check)
+  Base Cost             : 4,118,400.00
+  + Inflation (6%)      : 247,104.00
+  + Safety Factor (10%) : 436,550.40
+  Total Estimation      : 4,802,054.40
+  Cost per Area         : 400.17 / m²
+  Cost per Height       : 106,712.32 / m
 
+[Lift] - Spec: Sprinkler + hydrant + alarm
+  Data Source           : CSV file / Auto-Generated Market Rate (Supplier + Labor Cross-Check)
+  Base Cost             : 4,118,400.00
+  + Inflation (6%)      : 247,104.00
+  + Safety Factor (10%) : 436,550.40
+  Total Estimation      : 4,802,054.40
+  Cost per Area         : 400.17 / m²
+  Cost per Height       : 106,712.32 / m
 ===========================================================================
 TOTAL ESTIMATED MEP COST (ALL APPLICABLE SERVICES): 6,240,110.00
 OVERALL MEP COST PER AREA                         : 520.01 / m²
