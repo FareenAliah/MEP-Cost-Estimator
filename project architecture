@@ -2,7 +2,7 @@
 
 An intelligent Python-based pipeline designed to automate Gross Floor Area (GFA) extraction from architectural PDF drawings and calculate multi-service Mechanical, Electrical, and Plumbing (MEP) cost estimations. 
 
-This project bridges **Mechanical Engineering domain expertise** with **Software Engineering and Data Analytics**, providing a robust dual-fallback estimation engine that synthesizes historical project benchmarks, supplier/labor rates, inflation rates, and engineering safety margins.
+This project bridges **Mechanical Engineering domain expertise** with **Software Engineering and Data Analytics**, providing a robust dual-fallback estimation engine that synthesizes historical project benchmarks, supplier/labor rates, inflation rates, and engineering safety margins for new building.
 
 ---
 
@@ -13,7 +13,7 @@ This project bridges **Mechanical Engineering domain expertise** with **Software
   * *Historical Matching:* Normalizes and cross-checks historical project CSV data by service type, system specifications, and building height/area.
   * *Market Benchmark Synthesis:* Automatically generates baseline estimates using integrated supplier and labor cost indices when historical data is absent.
 * **Typology & Height Scaling:** Adjusts cost calculations dynamically based on building type (e.g., Hotel, Office, High-Rise Residential, Landed Residential, Warehouses) and vertical height factors.
-* **Financial & Risk Adjustments:** Automatically factors in a **6% inflation rate** and a **10% engineering safety factor**.
+* **Financial & Risk Adjustments:** Automatically factors in a **3% inflation rate** and a **10% engineering safety factor**.
 * **Conditional Service Filtering:** Evaluates applicable MEP services (ACMV, Plumbing, Fire Protection, Lifts) and omits non-applicable trades entirely.
 
 ---
@@ -26,7 +26,8 @@ The codebase is structured following professional separation-of-concerns princip
 mep_estimator/
 │
 ├── mep_estimator.py            # Main execution script
-├── previous_projects.csv       # Optional historical database schema
+├── past_awarded.csv       # Optional historical database schema
+├── output mep_estimator.py     # Output from coding
 └── README.md                   # Project documentation
 
 
