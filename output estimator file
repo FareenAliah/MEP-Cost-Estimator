@@ -1,0 +1,35 @@
+=== MEP COST ESTIMATION SYSTEM ===
+
+1. Path to past awarded cost file (.xlsx or .csv): past_awards.csv
+2. Path to PDF drawing for area & height (or press Enter for manual input): drawing.pdf
+
+Detected area candidates in PDF:
+  1. Page 1: 12,500.00 m2
+Select area number (1-1), or press Enter for manual input: 1
+  Using PDF area: 12,500.00 m2
+[Note] Could not detect height callout in PDF (scanned PDFs need OCR or manual entry).
+3. Building type (hotel / apartment / office / commercial): office
+5. Building height (m): 68
+6. Target year of construction (e.g., 2027): 2027
+
+8. Select applicable MEP services:
+Is 'ACMV' applicable? (yes / not applicable): yes
+Is 'FIRE' applicable? (yes / not applicable): yes
+Is 'PLUMBING' applicable? (yes / not applicable): not applicable
+Is 'LIFT' applicable? (yes / not applicable): yes
+Estimated number of lifts: 4
+
+No past lift cost data found in file. Estimated 4 lift(s) required.
+Enter supplier installed cost per lift incl. installation (or 'not applicable'): 350000
+Is this supplier quote at current year price? (yes / no): yes
+
+=================================================================
+MEP COST ESTIMATION SUMMARY | OFFICE | 12,500.00 m2 | 68 m | Target: 2027
+=================================================================
+ACMV      : MYR   4,825,000.00  [past projects (inflated)]
+FIRE      : error, previous data not found
+PLUMBING  : not applicable
+LIFT      : MYR   1,442,000.00  [supplier quote (2026 -> 2027)]
+-----------------------------------------------------------------
+TOTAL     : MYR   6,267,000.00
+=================================================================
