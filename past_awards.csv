@@ -1,4 +1,4 @@
-roject_name	service	building_type	height_m	area_sqm	units_or_rooms	lifts	awarded_cost	year_awarded
+project_name	service	building_type	height_m	area_sqm	units_or_rooms	lifts	awarded_cost	year_awarded
 2	Menara Vista Office	acmv	office	65	12000			4200000	2023
 3	Menara Vista Office	fire	office	65	12000			1350000	2023
 4	Menara Vista Office	plumbing	office	65	12000			980000	2023
