@@ -1,33 +1,33 @@
-project_name	service	building_type	height_m	area_sqm	units_or_rooms	lifts	awarded_cost	year_awarded
-2	Menara Vista Office	acmv	office	65	12000			4200000	2023
-3	Menara Vista Office	fire	office	65	12000			1350000	2023
-4	Menara Vista Office	plumbing	office	65	12000			980000	2023
-5	Menara Vista Office	lift	office	65	12000		4	1480000	2023
-6	Apex Corporate Tower	acmv	office	92	18500			6850000	2024
-7	Apex Corporate Tower	fire	office	92	18500			2150000	2024
-8	Apex Corporate Tower	plumbing	office	92	18500			1520000	2024
-9	Apex Corporate Tower	lift	office	92	18500		6	2460000	2024
-10	Grand Horizon Hotel	acmv	hotel	78	15000	240		6100000	2023
-11	Grand Horizon Hotel	fire	hotel	78	15000	240		1820000	2023
-12	Grand Horizon Hotel	plumbing	hotel	78	15000	240		2250000	2023
-13	Grand Horizon Hotel	lift	hotel	78	15000	240	5	2050000	2023
-14	Bayview Suites Hotel	acmv	hotel	54	9800	160		3950000	2025
-15	Bayview Suites Hotel	fire	hotel	54	9800	160		1240000	2025
-16	Bayview Suites Hotel	plumbing	hotel	54	9800	160		1540000	2025
-17	Bayview Suites Hotel	lift	hotel	54	9800	160	3	1260000	2025
-18	Seri Damai Residences	acmv	apartment	105	28000	320		5400000	2022
-19	Seri Damai Residences	fire	apartment	105	28000	320		2650000	2022
-20	Seri Damai Residences	plumbing	apartment	105	28000	320		3100000	2022
-21	Seri Damai Residences	lift	apartment	105	28000	320	6	2280000	2022
-22	Oakwood Park Condos	acmv	apartment	82	21500	240		4350000	2024
-23	Oakwood Park Condos	fire	apartment	82	21500	240		2120000	2024
-24	Oakwood Park Condos	plumbing	apartment	82	21500	240		2480000	2024
-25	Oakwood Park Condos	lift	apartment	82	21500	240	4	1620000	2024
-26	Sentral Retail Mall	acmv	commercial	28	24000			9200000	2023
-27	Sentral Retail Mall	fire	commercial	28	24000			2750000	2023
-28	Sentral Retail Mall	plumbing	commercial	28	24000			1890000	2023
-29	Sentral Retail Mall	lift	commercial	28	24000		6	2100000	2023
-30	Metro Hub Plaza	acmv	commercial	22	14500			5650000	2025
-31	Metro Hub Plaza	fire	commercial	22	14500			1680000	2025
-32	Metro Hub Plaza	plumbing	commercial	22	14500			1150000	2025
-33	Metro Hub Plaza	lift	commercial	22	14500		4	1440000	2025
+project_name,service,building_type,height_m,area_sqm,units_or_rooms,lifts,awarded_cost,year_awarded
+Menara Vista Office,acmv,office,65,12000,,,4200000,2023
+Menara Vista Office,fire,office,65,12000,,,1350000,2023
+Menara Vista Office,plumbing,office,65,12000,,,980000,2023
+Menara Vista Office,lift,office,65,12000,,4,1480000,2023
+Apex Corporate Tower,acmv,office,92,18500,,,6850000,2024
+Apex Corporate Tower,fire,office,92,18500,,,2150000,2024
+Apex Corporate Tower,plumbing,office,92,18500,,,1520000,2024
+Apex Corporate Tower,lift,office,92,18500,,6,2460000,2024
+Grand Horizon Hotel,acmv,hotel,78,15000,240,,6100000,2023
+Grand Horizon Hotel,fire,hotel,78,15000,240,,1820000,2023
+Grand Horizon Hotel,plumbing,hotel,78,15000,240,,2250000,2023
+Grand Horizon Hotel,lift,hotel,78,15000,240,5,2050000,2023
+Bayview Suites Hotel,acmv,hotel,54,9800,160,,3950000,2025
+Bayview Suites Hotel,fire,hotel,54,9800,160,,1240000,2025
+Bayview Suites Hotel,plumbing,hotel,54,9800,160,,1540000,2025
+Bayview Suites Hotel,lift,hotel,54,9800,160,3,1260000,2025
+Seri Damai Residences,acmv,apartment,105,28000,320,,5400000,2022
+Seri Damai Residences,fire,apartment,105,28000,320,,2050000,2022
+Seri Damai Residences,plumbing,apartment,105,28000,320,,3100000,2022
+Seri Damai Residences,lift,apartment,105,28000,320,6,2280000,2022
+Oakwood Park Condos,acmv,apartment,82,21500,240,,4350000,2024
+Oakwood Park Condos,fire,apartment,82,21500,240,,2120000,2024
+Oakwood Park Condos,plumbing,apartment,82,21500,240,,2480000,2024
+Oakwood Park Condos,lift,apartment,82,21500,240,4,1620000,2024
+Sentral Retail Mall,acmv,commercial,28,24000,,,9200000,2023
+Sentral Retail Mall,fire,commercial,28,24000,,,2750000,2023
+Sentral Retail Mall,plumbing,commercial,28,24000,,,1890000,2023
+Sentral Retail Mall,lift,commercial,28,24000,,6,2100000,2023
+Metro Hub Plaza,acmv,commercial,22,14500,,,5650000,2025
+Metro Hub Plaza,fire,commercial,22,14500,,,1680000,2025
+Metro Hub Plaza,plumbing,commercial,22,14500,,,1150000,2025
+Metro Hub Plaza,lift,commercial,22,14500,,4,1440000,2025
